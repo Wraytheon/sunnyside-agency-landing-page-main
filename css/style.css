@@ -1,0 +1,53 @@
+
+
+/* [ON SMALL SCREENS] */
+/* (A) BREAK INTO VERTICAL MENU */
+#hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+}
+
+/* (B) SHOW HAMBURGER ICON */
+#hamnav label { 
+    display: inline-block; 
+    color: white;
+    background: #a02620;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+/* (C) TOGGLE SHOW/HIDE MENU */
+#hamitems { display: none; }
+#hamnav input:checked ~ #hamitems { display: block; }
+
+
+
+/**Media Queries*/
+@media screen and (min-width: 450px){
+    /* [ON SMALL SCREENS] */
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #333;
+    }
+
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+        display: inline-block; 
+        color: white;
+        background: #a02620;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  
+}
